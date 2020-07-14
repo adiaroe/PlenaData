@@ -12,3 +12,10 @@ In the above example ‘Bubble’ would then be rewritten as ‘uleBbb’. Displ
 The first part of the problem can be solved easily by maintaining an array of size 26 (for 26 characters) and storing their count. Alternatively, a map can also be used with key being the character and value bring the count.
 
 The second part of the problem is a bit trickier given the constraints - maintaining the order from the input string and also maintaining case sensitivity. The code is heavily commented to understand the approach better.
+
+## Test Cases
+1. No unique characters present - exception thrown. Eg: "aabbcc" -> "No unique characters!!!" && "aabbcc"
+2. "Bubble" -> 'u' && "uleBbb"
+
+## Improvements
+Current code assumes that there are no other characters apart from [a-z][A-Z]. Cases with other characters must be handled.
